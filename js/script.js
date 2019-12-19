@@ -145,38 +145,3 @@ let appData = {
     income: [],
     savings: false
 };
-
-let options = {
-    width: 1024,
-    heigth: 1024,
-    name: "test"
-};
-
-delete options.width;
-console.log(options);
-
-options.color = {
-    border: true,
-    name: "again"
-};
-
-console.log(options);
-
-for (let key in options) {
-    console.log("свойство " + key + " значение " + options[key]);
-}
-
-console.log(Object.keys(options).length);
-
-let arr = ["one", 2, 3, "four", 5];
-arr.pop();
-arr.push("5");
-console.log(arr);
-
-arr.forEach(function (item, i) {
-    console.log(i + " " + item);
-});
-
-
-
-
